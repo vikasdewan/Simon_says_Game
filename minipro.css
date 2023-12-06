@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+h1,h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 252, 252);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+   
+}
+.btn-container{
+    display: flex;
+    justify-content:center;
+}
+
+
+.btn{
+    height:200px;
+    width: 200px;
+    border: 10px solid rgb(255, 255, 255);
+    
+    border-radius: 30px;
+    margin: 20px;
+   
+}
+ 
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(251, 251, 251);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+}
+.red{
+    background-color: rgb(228, 16, 16);
+}
+
+.green{
+    background-color: rgb(16, 207, 16);
+}
+
+.blue{
+    background-color: rgb(13, 13, 201);
+}
+
+.yellow{
+    background-color: rgb(206, 206, 25);
+}
+.flash{
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    
+}
+.userflash{
+    background-color: rgb(30, 235, 211);
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    
+}
+
+footer{
+    font-size: 1.5rem;
+}
