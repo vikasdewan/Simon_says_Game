@@ -105,7 +105,7 @@ function tag(){
     console.log(maxWidth)
     if(maxWidth<522){
       let tagLine = document.querySelector("h2");
-        tagLine.innerText = "tap anywhere to Start the Game";
+        tagLine.innerText = " NOTE : GAME IS UNDER DEVELOPMENT FOR PHONE YOU CAN PLAY IT ON LAPTOP OR PC \n tap anywhere to Start the Game";
         console.log(tagLine.innerText)   
     }
 }
