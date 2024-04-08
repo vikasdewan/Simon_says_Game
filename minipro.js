@@ -39,7 +39,7 @@ function levelUp(){
     userSeq =[];
     level++;
     h2.innerText = `Level ${level}`;
-    let randIdx = Math.floor(Math.random()*3);
+    let randIdx = Math.floor(Math.random()*4);
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
     btnFlash(randBtn);
@@ -105,10 +105,11 @@ function tag(){
     console.log(maxWidth)
     if(maxWidth<522){
       let tagLine = document.querySelector("h2");
-        tagLine.innerText = " NOTE : GAME IS UNDER DEVELOPMENT FOR PHONE YOU CAN PLAY IT ON LAPTOP OR PC \n tap anywhere to Start the Game";
+        tagLine.innerText = "tap anywhere to Start the Game";
         console.log(tagLine.innerText)   
     }
 }
 
 tag();
+ 
  
