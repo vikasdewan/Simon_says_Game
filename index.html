@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Says Game</title>
-    <link rel="stylesheet" href="./minipro.css">
+    <title>Simon Says game</title>
+    <link rel="stylesheet" href="../minipro.css">
     <link rel="stylesheet" media="screen and (max-width: 522px)" href="../phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Simon Says Game</h1>
     <h2>press any key to start the game</h2>
-     <div class="btn-container">
+    <div> 
+    <div class="btn-container">
        <div class="line-one">
            <div class="btn red text " type = "button"  id="red"> </div>
            <div class="btn green text" type = "button" id="green"> </div>
@@ -20,12 +22,24 @@
            <div class="btn yellow text" type = "button" id="yellow"> </div>
        </div>
      </div>
-     
-     <footer>Creator_Name : Uni_Code_pvt_lmt
+     </div>
+     <div class="rules"><h1>Instructions</h1>
+       <p> 1. Press "any Key of Keyboard" to start.  
+        <br>2. Watch as colors light up on the board.  
+        <br>3. Remember the sequence.<i class="fa-solid fa-gamepad"></i><i class="fa-solid fa-gamepad"></i><i class="fa-solid fa-gamepad"></i><i class="fa-solid fa-gamepad"></i>
+        <br>4. Click the colors in the same order. <i class="fa-solid fa-gamepad"></i>
+        <br>5. Keep going as the sequence gets longer.
+        <br>6. Make a mistake and the game ends. <i class="fa-solid fa-gamepad"></i>
+        <br>7. See how long you can last in the game!  
+        <br>8. Share your score with friends and challenge them.  
+        <br>9. Have fun playing Simon Says!<i class="fa-solid fa-gamepad"></i><i class="fa-solid fa-gamepad"></i><i class="fa-solid fa-gamepad"></i> 
+        
+    </p>
+        </div>
+     <footer> 
       &copy;copyright All rights are reserved   
      </footer>
 </body>
-<script src="./minipro.css"></script>
-<script src="./phone.css"></script>
-<script src="./minipro.js"></script>
+<script src="../phone.js"></script> 
+<script src="../minipro.js"></script>
 </html>
