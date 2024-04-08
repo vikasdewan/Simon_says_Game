@@ -16,8 +16,12 @@ h1,h2{
 .btn-container{
     display: flex;
     justify-content:center;
+    /* align-items: center; */
 }
 
+.containers{
+    display: inline;
+}
 
 .btn{
     height:200px;
@@ -39,19 +43,19 @@ h1,h2{
     text-shadow: 2px 2px 2px black;
 }
 .red{
-    background-color: rgb(228, 16, 16);
+    background-color: rgb(207, 15, 15);
 }
 
 .green{
-    background-color: rgb(16, 207, 16);
+    background-color: rgb(15, 213, 15);
 }
 
 .blue{
-    background-color: rgb(13, 13, 201);
+    background-color: rgb(14, 14, 215);
 }
 
 .yellow{
-    background-color: rgb(206, 206, 25);
+    background-color: rgb(203, 203, 10);
 }
 .flash{
     background-color: white;
@@ -60,12 +64,24 @@ h1,h2{
     
 }
 .userflash{
-    background-color: rgb(30, 235, 211);
+    background-color: rgb(0, 0, 0);
     color: black;
     text-shadow: 2px 2px 2px white;
     
 }
 
 footer{
+    font-size: 1.5rem;
+}
+
+
+/* Rules */
+.rules
+{
+  width : 200px;
+  text-align: center;
+  display: inline;
+}
+.rules p  {
     font-size: 1.5rem;
 }
