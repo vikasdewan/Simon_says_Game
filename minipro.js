@@ -109,7 +109,7 @@ let allBtns = document.querySelectorAll(".btn");
 }
 
 // Usage:
-const debouncedBtnPress = debounce(btnPress, 100); // Adjust the delay (in milliseconds)
+const debouncedBtnPress = debounce(btnPress, 0); // Adjust the delay (in milliseconds)
 
 // Attach the debounced function to the buttons
 for (const btn of allBtns) {
