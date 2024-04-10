@@ -15,6 +15,14 @@ document.addEventListener("keypress",function(){
     levelUp(); 
 }
 })
+document.addEventListener("touchstart",function(){
+  //once game started then no need to start it again
+  if(start == false){
+    console.log("game started");
+    start = true;
+    levelUp(); 
+}
+})
 
 
 //flashing of a button during game
@@ -89,9 +97,30 @@ function btnPress(){
 }
 
 let allBtns = document.querySelectorAll(".btn");
-for(btn of allBtns){
-    btn.addEventListener("click",btnPress)
+ // Debounce function (adjust the delay as needed)
+ function debounce(func, delay) {
+    let timer;
+    return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            func.apply(this, args); // Call the original function with the correct context and arguments
+        }, delay);
+    };
 }
+
+// Usage:
+const debouncedBtnPress = debounce(btnPress, 100); // Adjust the delay (in milliseconds)
+
+// Attach the debounced function to the buttons
+for (const btn of allBtns) {
+    if (window.innerWidth < 522) {
+        btn.addEventListener("touchstart", debouncedBtnPress);
+    }
+    else{
+        btn.addEventListener("click", debouncedBtnPress);
+    }
+}
+ 
 
 
 function reset(){
@@ -103,18 +132,6 @@ function reset(){
 }
 
 
-function tag(){
-    let maxWidth = screen.width;
-    console.log(maxWidth)
-    if(maxWidth<522){
-      let tagLine = document.querySelector("h2");
-        tagLine.innerText = "tap anywhere to Start the Game";
-        console.log(tagLine.innerText)   
-    }
-}
-
-tag();
- 
 // Initialize highestScore from localStorage (if available)
 let highestScore = parseInt(localStorage.getItem('highestScore')) || 0;
 
@@ -136,5 +153,3 @@ function updateHighestScore(score) {
 // Example usage (call this after each successful level completion)
 // const currentScore = 5; // Replace with the actual score
 
-
- 
