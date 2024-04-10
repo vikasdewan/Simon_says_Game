@@ -85,3 +85,20 @@ footer{
 .rules p  {
     font-size: 1.5rem;
 }
+
+
+/* highest Score CSS */
+.game-container {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the highest score display */
+#highest-score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

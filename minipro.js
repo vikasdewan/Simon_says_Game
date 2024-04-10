@@ -61,6 +61,9 @@ function checkAns(idx){
     else{
         h2.innerText = `Game Over! Your score was  ${level} .Press any key to start again :)`
         document.querySelector("body").style.backgroundColor= "red";
+        const currentScore = level;
+        console.log(currentScore);
+        updateHighestScore(currentScore);
         
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor= "black";
@@ -112,4 +115,26 @@ function tag(){
 
 tag();
  
+// Initialize highestScore from localStorage (if available)
+let highestScore = parseInt(localStorage.getItem('highestScore')) || 0;
+
+// Function to update highest score
+function updateHighestScore(score) {
+    document.getElementById('highest-score').textContent = `Highest Score: ${highestScore}`;
+    if (score > highestScore) {
+        highestScore = score;
+        console.log(highestScore);
+        document.getElementById('highest-score').textContent = `Highest Score: ${highestScore} 👏 `;
+        // Store the updated highest score in localStorage
+        localStorage.setItem('highestScore', highestScore);
+    }
+    else{
+        document.getElementById('highest-score').textContent = `Highest Score: 👉${highestScore}👈 __Try agin You can Beat This Score 💯__`;
+    }
+}
+
+// Example usage (call this after each successful level completion)
+// const currentScore = 5; // Replace with the actual score
+
+
  
