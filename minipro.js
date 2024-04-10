@@ -67,7 +67,12 @@ function checkAns(idx){
     }
     
     else{
-        h2.innerText = `Game Over! Your score was  ${level} .Press any key to start again :)`
+       if (window.innerWidth > 522){
+          h2.innerText = `Game Over! Your score is ${level} .Press any key to start again :)`
+       }
+      else{
+      h2.innerText = `GameOver! Your score is ${level} .Press AnyWhere to start again :)`
+      }
         document.querySelector("body").style.backgroundColor= "red";
         const currentScore = level;
         console.log(currentScore);
