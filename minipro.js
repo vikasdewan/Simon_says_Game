@@ -146,7 +146,7 @@ function updateHighestScore(score) {
         localStorage.setItem('highestScore', highestScore);
     }
     else{
-        document.getElementById('highest-score').textContent = `Highest Score: 👉${highestScore}👈 __Try agin You can Beat This Score 💯__`;
+            document.getElementById('highest-score').textContent = `Highest Score: 👉${highestScore}👈 __Try agin You can Beat This Score 💯__`;
     }
 }
 
